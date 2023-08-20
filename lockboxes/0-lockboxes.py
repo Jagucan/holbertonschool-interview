@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-
+"""
+Unlock Boxes
+"""
 def canUnlockAll(boxes):
+    """
+    unlock all boxes in the box system and return True if they were unlocked
+    """
     unlocked = [0]
     for box_id, box in enumerate(boxes):
         if not box:
