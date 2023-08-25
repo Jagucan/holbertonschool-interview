@@ -2,6 +2,8 @@
 """
 Unlock Boxes
 """
+
+
 def canUnlockAll(boxes):
     """
     unlock all boxes in the box system and return True if they were unlocked
