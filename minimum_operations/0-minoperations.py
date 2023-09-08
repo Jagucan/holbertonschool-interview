@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
 """ Copy and Paste the H characters in the file """
+
+
 def minOperations(n):
 
     if n <= 1:
-        return 0
+        return n
 
     dp = [0] * (n + 1)
 
