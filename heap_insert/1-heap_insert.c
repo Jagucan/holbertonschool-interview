@@ -9,32 +9,32 @@
  */
 heap_t *heap_insert(heap_t **root, int value)
 {
-    heap_t *new_node, *parent;
-    
-    new_node = binary_tree_node(NULL, value);
-    if (!new_node)
-        return (NULL);
+	heap_t *new_node, *parent;
+	
+	new_node = binary_tree_node(NULL, value);
+	if (!new_node)
+		return (NULL);
 
-    if (!*root)
-    {
-        *root = new_node;
-        return (new_node);
-    }
-    
-    parent = find_insert_parent(*root);
-    if (!parent)
-    {
-        free(new_node);
-        return (NULL);
-    }
+	if (!*root)
+	{
+		*root = new_node;
+		return (new_node);
+	}
+	
+	parent = find_insert_parent(*root);
+	if (!parent)
+	{
+		free(new_node);
+		return (NULL);
+	}
 
-    if (!parent->left)
-        parent->left = new_node;
-    else
-        parent->right = new_node;
-    
-    new_node->parent = parent;
-    return (heapify_up(new_node));
+	if (!parent->left)
+		parent->left = new_node;
+	else
+		parent->right = new_node;
+	
+	new_node->parent = parent;
+	return (heapify_up(new_node));
 }
 
 /**
@@ -45,14 +45,14 @@ heap_t *heap_insert(heap_t **root, int value)
  */
 heap_t *find_insert_parent(heap_t *root)
 {
-    while (root->left && root->right)
-    {
-        if (root->left->n > root->right->n)
-            root = root->left;
-        else
-            root = root->right;
-    }
-    return (root);
+	while (root->left && root->right)
+	{
+		if (root->left->n > root->right->n)
+			root = root->left;
+		else
+			root = root->right;
+	}
+	return (root);
 }
 
 /**
@@ -63,15 +63,15 @@ heap_t *find_insert_parent(heap_t *root)
  */
 heap_t *heapify_up(heap_t *node)
 {
-    int temp;
-    
-    while (node->parent && node->n > node->parent->n)
-    {
-        temp = node->n;
-        node->n = node->parent->n;
-        node->parent->n = temp;
-        node = node->parent;
-    }
-    
-    return (node);
+	int temp;
+	
+	while (node->parent && node->n > node->parent->n)
+	{
+		temp = node->n;
+		node->n = node->parent->n;
+		node->parent->n = temp;
+		node = node->parent;
+	}
+	
+	return (node);
 }
