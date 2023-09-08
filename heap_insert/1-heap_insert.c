@@ -10,7 +10,7 @@
 heap_t *heap_insert(heap_t **root, int value)
 {
 	heap_t *new_node, *parent;
-	
+
 	new_node = binary_tree_node(NULL, value);
 	if (!new_node)
 		return (NULL);
@@ -20,7 +20,7 @@ heap_t *heap_insert(heap_t **root, int value)
 		*root = new_node;
 		return (new_node);
 	}
-	
+
 	parent = find_insert_parent(*root);
 	if (!parent)
 	{
@@ -32,7 +32,7 @@ heap_t *heap_insert(heap_t **root, int value)
 		parent->left = new_node;
 	else
 		parent->right = new_node;
-	
+
 	new_node->parent = parent;
 	return (heapify_up(new_node));
 }
@@ -64,7 +64,7 @@ heap_t *find_insert_parent(heap_t *root)
 heap_t *heapify_up(heap_t *node)
 {
 	int temp;
-	
+
 	while (node->parent && node->n > node->parent->n)
 	{
 		temp = node->n;
@@ -72,6 +72,6 @@ heap_t *heapify_up(heap_t *node)
 		node->parent->n = temp;
 		node = node->parent;
 	}
-	
+
 	return (node);
 }
