@@ -6,7 +6,7 @@
 def minOperations(n):
 
     if n <= 1:
-        return n
+        return 0
 
     dp = [0] * (n + 1)
 
