@@ -34,9 +34,6 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE]) {
 	int j;
 
 	while (!is_stable(grid)) {
-		printf("=\n");
-		print_grid(grid);
-		printf("\n");
 
 		for (i = 0; i < GRID_SIZE; i++) {
 			for (j = 0; j < GRID_SIZE; j++) {
