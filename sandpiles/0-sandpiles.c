@@ -1,22 +1,6 @@
 #include "sandpiles.h"
 
 
-void print_grid(int grid[GRID_SIZE][GRID_SIZE]) {
-	int i;
-	int j;
-
-	for (i = 0; i < GRID_SIZE; i++) {
-		for (j = 0; j < GRID_SIZE; j++) {
-			printf("%d", grid[i][j]);
-			if (j < GRID_SIZE - 1) {
-				printf(" ");
-			}
-		}
-		printf("\n");
-	}
-}
-
-
 int is_stable(int grid[GRID_SIZE][GRID_SIZE]) {
 	int i;
 	int j;
