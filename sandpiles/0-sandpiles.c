@@ -2,8 +2,11 @@
 
 
 void print_grid(int grid[GRID_SIZE][GRID_SIZE]) {
-	for (int i = 0; i < GRID_SIZE; i++) {
-		for (int j = 0; j < GRID_SIZE; j++) {
+	int i;
+	int j;
+
+	for (i = 0; i < GRID_SIZE; i++) {
+		for (j = 0; j < GRID_SIZE; j++) {
 			printf("%d", grid[i][j]);
 			if (j < GRID_SIZE - 1) {
 				printf(" ");
@@ -15,8 +18,11 @@ void print_grid(int grid[GRID_SIZE][GRID_SIZE]) {
 
 
 int is_stable(int grid[GRID_SIZE][GRID_SIZE]) {
-	for (int i = 0; i < GRID_SIZE; i++) {
-		for (int j = 0; j < GRID_SIZE; j++) {
+	int i;
+	int j;
+
+	for (i = 0; i < GRID_SIZE; i++) {
+		for (j = 0; j < GRID_SIZE; j++) {
 			if (grid[i][j] > 3) {
 				return 0;
 			}
@@ -46,14 +52,17 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE]) {
 		print_grid(grid);
 		printf("\n");
 
-		for (int i = 0; i < GRID_SIZE; i++) {
-			for (int j = 0; j < GRID_SIZE; j++) {
+		int i;
+		int j;
+
+		for (i = 0; i < GRID_SIZE; i++) {
+			for (j = 0; j < GRID_SIZE; j++) {
 				temp[i][j] = grid[i][j];
 			}
 		}
 
-		for (int i = 0; i < GRID_SIZE; i++) {
-			for (int j = 0; j < GRID_SIZE; j++) {
+		for (i = 0; i < GRID_SIZE; i++) {
+			for (j = 0; j < GRID_SIZE; j++) {
 				if (temp[i][j] > 3) {
 					topple(grid, i, j);
 				}
@@ -64,8 +73,9 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE]) {
 
 
 void sandpiles_sum(int grid1[GRID_SIZE][GRID_SIZE], int grid2[GRID_SIZE][GRID_SIZE]) {
-	for (int i = 0; i < GRID_SIZE; i++) {
-		for (int j = 0; j < GRID_SIZE; j++) {
+	int i, j;
+	for (i = 0; i < GRID_SIZE; i++) {
+		for (j = 0; j < GRID_SIZE; j++) {
 			grid1[i][j] += grid2[i][j];
 		}
 	}
