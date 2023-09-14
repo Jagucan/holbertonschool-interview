@@ -76,8 +76,8 @@ static void print_grid(int grid[3][3])
 		{
 			printf("\n");
 		}
-		printf("\n");
 	}
+	printf("\n");
 }
 
 /**
