@@ -1,8 +1,8 @@
 #include "sandpiles.h"
 
 /**
- * is_stable - returns true  if the version of the sandbox is stable
- * 
+ * is_stable - returns true  if the version of the sandbox is stable.
+ * @grid: the sandbox.
  * 
 */
 int is_stable(int grid[GRID_SIZE][GRID_SIZE])
@@ -25,8 +25,9 @@ int is_stable(int grid[GRID_SIZE][GRID_SIZE])
 
 /**
  * topple - returns true if the version of the sandbox
- * 
- * 
+ * @grid: the sandbox
+ * @x: the x coordinate of the sandbox
+ * @y: the y coordinate of the sandbox
 */
 void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y) {
 	if (x >= 0 && x < GRID_SIZE && y >= 0 && y < GRID_SIZE) {
@@ -41,7 +42,7 @@ void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y) {
 
 /**
  * stabilize -  verifies that the version of the sandbox
- * 
+ * @grid: the sandbox
  * 
 */
 void stabilize(int grid[GRID_SIZE][GRID_SIZE])
@@ -70,8 +71,8 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE])
 
 /**
  * sandpiles_sum - calculate sum of sand in the given grid
- * 
- * 
+ * @grid1: the grid
+ * @grid2: the grid
 */
 void sandpiles_sum(int grid1[GRID_SIZE][GRID_SIZE], int grid2[GRID_SIZE][GRID_SIZE]) {
 	int i, j;
