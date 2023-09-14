@@ -7,6 +7,7 @@
 
 int is_stable(int grid[GRID_SIZE][GRID_SIZE]);
 void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y);
+static void print_grid(int grid[3][3])
 void stabilize(int grid[GRID_SIZE][GRID_SIZE]);
 void sandpiles_sum(int grid1[GRID_SIZE][GRID_SIZE], int grid2[GRID_SIZE][GRID_SIZE]);
 
