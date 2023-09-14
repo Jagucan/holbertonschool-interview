@@ -35,13 +35,24 @@ void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y)
 	{
 		grid[x][y] -= 4;
 
-		if (x - 1 >= 0) grid[x - 1][y]++;
-		if (x + 1 < GRID_SIZE) grid[x + 1][y]++;
-		if (y - 1 >= 0) grid[x][y - 1]++;
-		if (y + 1 < GRID_SIZE) grid[x][y + 1]++;
+		if (x - 1 >= 0)
+		{
+			grid[x - 1][y]++;
+		}
+		if (x + 1 < GRID_SIZE)
+		{
+			grid[x + 1][y]++;
+		}
+		if (y - 1 >= 0)
+		{
+			grid[x][y - 1]++;
+		}
+		if (y + 1 < GRID_SIZE)
+		{
+			grid[x][y + 1]++;
+		}
 	}
 }
-
 
 /**
  * stabilize -  verifies that the version of the sandbox
@@ -54,7 +65,7 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE])
 	int i;
 	int j;
 
-	
+
 	while (!is_stable(grid))
 	{
 
