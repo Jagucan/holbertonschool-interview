@@ -55,6 +55,32 @@ void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y)
 }
 
 /**
+ * print_grid - Print a 3x3 grid
+ * @grid: 3x3 grid
+ */
+static void print_grid(int grid[3][3])
+{
+	int i, j;
+
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+			if (j != 0)
+			{
+				printf(" ");
+			}
+			printf("%d", grid[i][j]);
+		}
+		if (i != 1)
+		{
+			printf("\n");
+		}
+	}
+	printf("\n");
+}
+
+/**
  * stabilize -  verifies that the version of the sandbox
  * @grid: the sandbox
  * 
@@ -70,8 +96,8 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE])
 	{
 
 		printf("=\n");
-       /*print_grid(grid);*/ 
-        printf("\n");
+		print_grid(grid);
+		printf("\n");
 
 		for (i = 0; i < GRID_SIZE; i++)
 		{
