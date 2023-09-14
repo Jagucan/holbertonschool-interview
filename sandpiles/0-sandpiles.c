@@ -40,7 +40,7 @@ void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y) {
 }
 
 /**
- * stabilize -  
+ * stabilize -  verifies that the version of the sandbox
  * 
  * 
 */
