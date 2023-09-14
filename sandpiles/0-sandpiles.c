@@ -1,17 +1,21 @@
 #include "sandpiles.h"
 
 /**
- * 
+ * is_stable - returns true  if the version of the sandbox is stable
  * 
  * 
 */
-int is_stable(int grid[GRID_SIZE][GRID_SIZE]) {
+int is_stable(int grid[GRID_SIZE][GRID_SIZE])
+{
 	int i;
 	int j;
 
-	for (i = 0; i < GRID_SIZE; i++) {
-		for (j = 0; j < GRID_SIZE; j++) {
-			if (grid[i][j] > 3) {
+	for (i = 0; i < GRID_SIZE; i++)
+	{
+		for (j = 0; j < GRID_SIZE; j++)
+		{
+			if (grid[i][j] > 3)
+			{
 				return 0;
 			}
 		}
@@ -20,7 +24,7 @@ int is_stable(int grid[GRID_SIZE][GRID_SIZE]) {
 }
 
 /**
- * 
+ * topple - returns true if the version of the sandbox
  * 
  * 
 */
@@ -36,11 +40,12 @@ void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y) {
 }
 
 /**
- * 
+ * stabilize -  
  * 
  * 
 */
-void stabilize(int grid[GRID_SIZE][GRID_SIZE]) {
+void stabilize(int grid[GRID_SIZE][GRID_SIZE])
+{
 	int temp[GRID_SIZE][GRID_SIZE];
 	int i;
 	int j;
@@ -64,7 +69,7 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE]) {
 }
 
 /**
- * 
+ * sandpiles_sum - calculate sum of sand in the given grid
  * 
  * 
 */
