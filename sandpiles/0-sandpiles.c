@@ -124,7 +124,7 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE])
  * @grid1: the grid
  * @grid2: the grid
 */
-void sandpiles_sum(int grid1[GRID_SIZE][GRID_SIZE], \
+void sandpiles_sum(int grid1[GRID_SIZE][GRID_SIZE],
 					int grid2[GRID_SIZE][GRID_SIZE])
 {
 	int i, j;
