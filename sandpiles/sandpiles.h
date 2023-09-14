@@ -5,7 +5,6 @@
 
 #define GRID_SIZE 3
 
-void print_grid(int grid[GRID_SIZE][GRID_SIZE]);
 int is_stable(int grid[GRID_SIZE][GRID_SIZE]);
 void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y);
 void stabilize(int grid[GRID_SIZE][GRID_SIZE]);
