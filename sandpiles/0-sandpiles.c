@@ -1,7 +1,4 @@
-#include <stdio.h>
-
-
-#define GRID_SIZE 3
+#include "sandpiles.h"
 
 
 void print_grid(int grid[GRID_SIZE][GRID_SIZE]) {
