@@ -84,14 +84,12 @@ static void print_grid(int grid[3][3])
 /**
  * stabilize -  verifies that the version of the sandbox
  * @grid: the sandbox
- * 
 */
 void stabilize(int grid[GRID_SIZE][GRID_SIZE])
 {
 	int temp[GRID_SIZE][GRID_SIZE];
 	int i;
 	int j;
-
 
 	while (!is_stable(grid))
 	{
@@ -126,9 +124,11 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE])
  * @grid1: the grid
  * @grid2: the grid
 */
-void sandpiles_sum(int grid1[GRID_SIZE][GRID_SIZE], int grid2[GRID_SIZE][GRID_SIZE])
+void sandpiles_sum(int grid1[GRID_SIZE][GRID_SIZE], \
+					int grid2[GRID_SIZE][GRID_SIZE])
 {
 	int i, j;
+
 	for (i = 0; i < GRID_SIZE; i++)
 	{
 		for (j = 0; j < GRID_SIZE; j++)
