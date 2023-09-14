@@ -15,9 +15,7 @@ int is_stable(int grid[GRID_SIZE][GRID_SIZE])
 		for (j = 0; j < GRID_SIZE; j++)
 		{
 			if (grid[i][j] > 3)
-			{
 				return 0;
-			}
 		}
 	}
 	return 1;
