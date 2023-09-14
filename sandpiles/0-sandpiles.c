@@ -1,6 +1,10 @@
 #include "sandpiles.h"
 
-
+/**
+ * 
+ * 
+ * 
+*/
 int is_stable(int grid[GRID_SIZE][GRID_SIZE]) {
 	int i;
 	int j;
@@ -15,7 +19,11 @@ int is_stable(int grid[GRID_SIZE][GRID_SIZE]) {
 	return 1;
 }
 
-
+/**
+ * 
+ * 
+ * 
+*/
 void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y) {
 	if (x >= 0 && x < GRID_SIZE && y >= 0 && y < GRID_SIZE) {
 		grid[x][y] -= 4;
@@ -27,7 +35,11 @@ void topple(int grid[GRID_SIZE][GRID_SIZE], int x, int y) {
 	}
 }
 
-
+/**
+ * 
+ * 
+ * 
+*/
 void stabilize(int grid[GRID_SIZE][GRID_SIZE]) {
 	int temp[GRID_SIZE][GRID_SIZE];
 	int i;
@@ -51,7 +63,11 @@ void stabilize(int grid[GRID_SIZE][GRID_SIZE]) {
 	}
 }
 
-
+/**
+ * 
+ * 
+ * 
+*/
 void sandpiles_sum(int grid1[GRID_SIZE][GRID_SIZE], int grid2[GRID_SIZE][GRID_SIZE]) {
 	int i, j;
 	for (i = 0; i < GRID_SIZE; i++) {
