@@ -70,8 +70,7 @@ static void print_grid(int grid[3][3])
 			{
 				printf(" ");
 			}
-			printf("%d", grid[i][j]);
-			printf("\n");
+			printf("%d \n", grid[i][j]);
 		}
 		if (i != 1)
 		{
