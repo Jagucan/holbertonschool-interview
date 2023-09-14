@@ -3,7 +3,7 @@
 /**
  * is_stable - returns true  if the version of the sandbox is stable.
  * @grid: the sandbox.
- * return: Return true if the version of the sandbox is stable
+ * Return: Return true if the version of the sandbox is stable
 */
 int is_stable(int grid[GRID_SIZE][GRID_SIZE])
 {
