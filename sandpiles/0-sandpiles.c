@@ -73,9 +73,9 @@ static void print_grid(int grid[3][3])
 			}
 		}
 		if (i < 2)
-			{
-				printf("\n");
-			}
+		{
+			printf("\n");
+		}
 	}
 }
 
