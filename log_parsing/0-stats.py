@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+print metrics module
+"""
 import sys
 
 def print_metrics(file_size, status_codes):
