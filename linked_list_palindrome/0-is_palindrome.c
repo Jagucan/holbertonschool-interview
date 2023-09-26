@@ -1,20 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+#include <stddef.h>
 
+
+/**
+ * is_palindrome - checks if a singly linked list is a palindrome
+ * @head: pointer to pointer to the head of the list
+ *
+ * Return: 1 if the list is a palindrome, 0 otherwise
+ */
 
 int is_palindrome(listint_t **head)
 {
-
-    if (*head == NULL || (*head)->next == NULL) {
-        return 1;
-    }
-
     listint_t *slow_ptr = *head;
     listint_t *fast_ptr = *head;
     listint_t *prev_slow_ptr = *head;
     listint_t *mid = NULL;
     int is_palindrome = 1;
+
+    if (*head == NULL || (*head)->next == NULL)
+    {
+        return 1;
+    }
 
     while (fast_ptr != NULL && fast_ptr->next != NULL) {
         fast_ptr = fast_ptr->next->next;
