@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""
-Print metrics module.
-"""
+
+""" Module for printing metrics for a given metric. """
+
+
 import sys
 
 def print_metrics(file_size, status_codes):
