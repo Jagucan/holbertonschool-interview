@@ -1,12 +1,16 @@
 #!/usr/bin/python3
 """
-print metrics module
+Print metrics module.
 """
 import sys
 
 def print_metrics(file_size, status_codes):
     """
-    print the calculated metrics
+    Print the calculated metrics.
+
+    Args:
+        file_size: size of file.
+        status_codes: dictionary of status codes.
     """
     total_size = sum(file_size)
     print(f"Total file size: {total_size}")
@@ -18,7 +22,7 @@ def print_metrics(file_size, status_codes):
 
 def main():
     """
-    main function that calculates metrics
+    main function that calculates metrics.
     """
     line_count = 0
     file_size = []
