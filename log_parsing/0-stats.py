@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 
-""" Module for printing metrics for a given metric. """
-
-
 import sys
+
+""" Module for printing metrics for a given metric. """
 
 def print_metrics(file_size, status_codes):
     """
-    Print the calculated metrics.
+    print_metrics: Print the calculated metrics.
 
     Args:
         file_size: size of file.
@@ -23,7 +22,7 @@ def print_metrics(file_size, status_codes):
 
 def main():
     """
-    main function that calculates metrics.
+    main: Main function that calculates metrics.
     """
     line_count = 0
     file_size = []
