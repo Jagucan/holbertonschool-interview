@@ -1,16 +1,18 @@
 #!/usr/bin/python3
+""" Modules that reads stdin line by line and computes metrics.
 
+"""
 import sys
 
 
 def print_metrics(file_size, status_codes):
-    """
-    Print the calculated metrics.
+    """ def print metrics for a given file size and status codes
 
-    Args:
-        file_size (list): List of file sizes.
-        status_codes (dict): Dictionary of status codes and their counts.
+        Args:
+            file_size (list): List of file sizes.
+            status_codes (dict): Dictionary of status codes and their counts.
     """
+
     total_size = sum(file_size)
     print(f"Total file size: {total_size}")
 
@@ -21,9 +23,10 @@ def print_metrics(file_size, status_codes):
 
 
 def main():
+    """ The main function that processes input lines
+         and calculates metrics. 
     """
-    The main function that processes input lines and calculates metrics.
-    """
+
     line_count = 0
     file_size = []
     status_codes = {}
