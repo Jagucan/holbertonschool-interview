@@ -7,7 +7,8 @@ import sys
 
 
 def print_metrics(file_size, status_codes):
-    """ def print metrics for a given file size and status codes
+    """ def print metrics for a given file size
+        and status codes
 
         Args:
             file_size (list): List of file sizes.
@@ -25,7 +26,7 @@ def print_metrics(file_size, status_codes):
 
 def main():
     """ The main function that processes input lines
-         and calculates metrics. 
+        and calculates metrics. 
     """
 
     line_count = 0
